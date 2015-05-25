@@ -1,0 +1,13 @@
+{
+  "name": "percy-proxy",
+  "version": "0.1.1",
+  "description": "Proxy and HTTP anti-phishing extension for Chrome",
+  "readme": "README.md",
+  "private": true,
+  "devDependencies": {
+    "babelify": "^5.0.4",
+    "browserify": "^9.0.3",
+    "gulp-rename": "^1.2.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}

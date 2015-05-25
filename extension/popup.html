@@ -1,0 +1,48 @@
+<html>
+<head>
+    <title>Percy</title>
+    <script src="popup.js"></script>
+    <link rel="stylesheet" href="popup.css" media="screen" charset="utf-8">
+</head>
+<body>
+	<h1>Percy Proxy</h1>
+
+	<div id="leaks" style="display: none">You've accessed protected URLs without using a proxy. If you are on an unprotected network you should reset your password.</div>
+
+	<ul>
+		<li>
+			<label title="You're going commando">
+				<img src="proxy-off.png"/>
+                <input type="radio" name="proxy" value="off"/>
+				Off / System
+			</label>
+		</li>
+		<li>
+			<label title="Only PAC sites go through proxy">
+				<img src="proxy-pac.png"/>
+                <input type="radio" name="proxy" value="pac"/>
+				PAC Only
+			</label>
+		</li>
+		<li>
+			<label title="Everything goes through the proxy">
+				<img src="proxy-all.png"/>
+                <input type="radio" name="proxy" value="all"/>
+				Everything
+			</label>
+		</li>
+	</ul>
+
+    <h5>Advanced</h5>
+    <div class="advanced">
+        <p><label for="port">Port</label> <input id="port" type="number" name="port" value=""></p>
+        <p><label for="pac">PAC URL</label> <input id="pac" type="url" name="pac" value="" placeholder="https or file URL of PAC file"></p>
+        <p><label for="auth">Auth Alert</label> <input id="auth" type="checkbox" name="auth" value=""></p>
+
+        <p><strong>Protected URLs</strong></p>
+        <textarea name="safe_urls" id="safe"></textarea>
+    </div>
+
+    <p><input type="submit" value="Save Settings"/></p>
+</body>
+</html>

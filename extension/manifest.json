@@ -1,0 +1,36 @@
+{
+	"manifest_version": 2,
+	"name": "Percy Proxy",
+	"description": "Proxy switching and HTTP auth phishing warning",
+	"version": "0.1",
+	"author": "John Godley",
+
+	"permissions": [
+		"webRequestBlocking",
+		"webRequest",
+		"proxy",
+		"storage",
+		"*://*/"
+	],
+
+	"background": {
+		"scripts": [ "backgroundscript.js" ],
+		"persistent": true
+	},
+
+	"browser_action": {
+		"default_title": "Percy Proxy",
+		"default_popup": "popup.html",
+		"default_icon" : {
+			"16": "percy-16-black.png",
+			"48": "percy-48-black.png",
+			"128": "percy-128-black.png"
+		}
+	},
+
+	"icons": {
+		"16": "percy-16-black.png",
+		"48": "percy-48-black.png",
+		"128": "percy-128-black.png"
+	}
+}
